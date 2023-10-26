@@ -78,7 +78,9 @@ class LoginPage extends StatelessWidget {
 
               //sign in button
               MyButton(
-                  onTap: (){},
+                  onTap: (){
+                    print("Sign In Button");
+                  },
               ),
 
               const SizedBox(height: 50),
@@ -109,14 +111,24 @@ class LoginPage extends StatelessWidget {
 
               const SizedBox(height: 25,),
 
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SquareTile(imagePath: "lib/images/google.png"),
+                  SquareTile(
+                    imagePath: "lib/images/google.png",
+                    onTap: (){
+                      print("Google Button");
+                    },
+                  ),
 
                   SizedBox(width: 20,),
 
-                  SquareTile(imagePath: "lib/images/apple.png")
+                  SquareTile(
+                    imagePath: "lib/images/apple.png",
+                    onTap: (){
+                      print("Apple Button");
+                    },
+                  )
                 ],
               ),
 
