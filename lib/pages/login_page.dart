@@ -114,20 +114,24 @@ class LoginPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SquareTile(
-                    imagePath: "lib/images/google.png",
+                  GestureDetector(
                     onTap: (){
-                      print("Google Button");
+                      print("google Button");
                     },
+                    child: SquareTile(
+                      imagePath: "lib/images/google.png",
+                    ),
                   ),
 
                   SizedBox(width: 20,),
 
-                  SquareTile(
-                    imagePath: "lib/images/apple.png",
+                  GestureDetector(
                     onTap: (){
-                      print("Apple Button");
+                      print("apple Button");
                     },
+                    child: SquareTile(
+                      imagePath: "lib/images/apple.png",
+                    ),
                   )
                 ],
               ),
